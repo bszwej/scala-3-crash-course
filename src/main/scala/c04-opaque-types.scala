@@ -6,7 +6,7 @@ object AnyValDrawbacks:
     object ValueClasses {
         case class PaymentId(id: String) extends AnyVal
         val paymentId = PaymentId("abc")
-        def printName(PaymentId: PaymentId) = println(paymentId.id)
+        def printName(paymentId: PaymentId) = println(paymentId.id)
         // val somePaymentId: Option[PaymentId] = Some(PaymentId("abc")) // this will box :(
     }
     // More on that: https://failex.blogspot.com/2017/04/the-high-cost-of-anyval-subclasses.html
