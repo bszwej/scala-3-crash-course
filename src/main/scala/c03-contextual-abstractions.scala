@@ -112,8 +112,8 @@ object TypeclassesExercises:
     // - instance for Option	
     // - syntax	
     trait Monad[F[_]]: 	
-        def flatMap[A, B](fa: F[A])(f: A => F[B]): F[B]	
-        def pure[A](x: A): F[A]	
+        def bind[A, B](fa: F[A])(f: A => F[B]): F[B]	
+        def unit[A](x: A): F[A]	
     ???
 
 /**
