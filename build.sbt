@@ -7,18 +7,17 @@ lazy val root = project
     version := "0.1.0",
 
     scalaVersion := scala3Version,
-
-    libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
   )
 
   scalacOptions ++= Seq(
-  "-encoding", "utf8", // Option and arguments on same line
-  "-Xfatal-warnings",  // New lines for each options
+  "-encoding", "utf8",
+  "-Xfatal-warnings",
   "-deprecation",
   "-unchecked",
   "-language:implicitConversions",
   "-language:higherKinds",
   "-language:existentials",
+  // "-indent", "-rewrite"
   //  "-Xprint:typer"
   //  "-Xprint:parser"
   )
