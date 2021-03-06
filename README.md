@@ -5,7 +5,7 @@ Scala 3 RC1 is already here and we can expect the final release soon! That's why
 This workshop is dedicated to Scala 2 developers and assumes prior knowledge about implicits, ADTs and type classes.
 
 ## Before the workshop
-1. Check out this repository
+1. Checkout this repository
 ```sh
 git clone git@github.com:bszwej/scala-3-crash-course.git
 ```
@@ -31,3 +31,6 @@ sbt compile
     - contextual functions
 4. Opaque types
 5. Union/Intersection types
+6. All the small bits
+7. Type class derivation (not ready yet)
+8. Macros (not ready yet)
