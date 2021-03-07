@@ -9,17 +9,19 @@ object UnionTypes:
      * [] Commutativity
      * [] Union types vs either
      */
+
+    // definition
     val x: Boolean = true
 
-    def f(in: Boolean): String = in match {
-        case _: Boolean => "bool"
-    }
+    // usage
+    def f(in: Boolean): String = ???
 
     // How many values does type `Either[Boolean, Boolean]` have?
     // How many values does type `Boolean | Boolean` have?
 
     /**
-     * Example 2: What type will be inferred?
+     * Example 2: What type will be inferred? 
+     * [] Can we improve inference with union types?
      */
     val what = if(1==1) "a" else 10
 
@@ -42,5 +44,62 @@ object UnionTypes:
         _ <- error2
     yield ()
 
-// object IntersectionTypes:
-//     tbd
+//
+// Exercise 1: Model a PaymentAuthorizationError ADT from Chapter 2 (enums) using a union type. 
+// What pros/cons do you see when you use a union type vs enums in modeling ADTs?
+//
+
+object IntersectionTypes:
+    /**
+     * Example 1: Basics
+     * [] Example
+     * [] Subtyping
+     */
+    object Example1:
+        trait A:
+            def foo: String
+
+        trait B:
+            def bar: Int
+
+    /**
+     * Example 2: Conflicting members
+     * [] Same name different type
+     * [] Same name same type
+     * [] Variance
+     */
+    object Example21:
+        trait A:
+            def foo: String
+        trait B:
+            def foo: Int
+
+        val x: A & B = ???
+        
+
+    object Example22:
+        trait A:
+            def f: Boolean
+
+        trait B:
+            def f: Boolean
+
+
+    object Example23:
+        trait A:
+            def foo: String
+        trait B:
+            def foo: Int
+        
+
+    /**
+     * Example 3: Intersection types vs compound types (a.k.a. `with` types from Scala 2)
+     * [] With vs &
+     * [] Commutativity
+     */
+    trait Foo:
+        def f: AnyVal
+    trait A extends Foo:
+        override def f: Boolean
+    trait B extends Foo:
+        override def f: AnyVal

@@ -9,7 +9,7 @@ package solutions
 
 /**
  * Example 1: Simple enums
- * [x] usage, compiler errors, api (values, valueOf, ordinal, fromOrdinal)
+ * [x] usage, compiler errors, usage (exhaustive pattern matching, values, valueOf, ordinal, fromOrdinal)
  * [x] multiline enums
  * [x] enum methods/companion object
  */

@@ -12,7 +12,7 @@ case object Delivered extends ShipmentStatus
 
 /**
  * Example 1: Simple enums
- * [] usage, compiler errors, api (values, valueOf, ordinal, fromOrdinal)
+ * [] usage, compiler errors, usage (exhaustive pattern matching, values, valueOf, ordinal, fromOrdinal)
  * [] multiline enums
  * [] enum methods/companion object
  */
