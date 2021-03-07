@@ -30,7 +30,8 @@ sbt compile
     - scoping of given/using
     - contextual functions
 4. Opaque types
-5. Union/Intersection types
-6. All the small bits
-7. Type class derivation (not ready yet)
-8. Macros (not ready yet)
+5. Union and Intersection types
+6. The small bits
+7. New kinds of types: type lambdas, match types, dependent functions, polymorphic functions (in preparation)
+8. Type class derivation (in preparation)
+9. Macros (in preparation)
