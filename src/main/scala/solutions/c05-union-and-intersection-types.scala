@@ -64,6 +64,7 @@ object IntersectionTypes:
      * Example 1: Basics
      * [x] Example
      * [x] Subtyping
+     * [x] Variance
      */
     object Example1:
         trait A:
@@ -81,11 +82,14 @@ object IntersectionTypes:
         val a: A = ab
         val b: B = ab
 
+        // variance - the following property is valid only for covariant types
+        def x: List[A] & List[B] = ???
+        def y: List[A & B] = x
+
     /**
      * Example 2: Conflicting members
      * [x] Same name different type
      * [x] Same name same type
-     * [x] Variance
      */
     object Example21:
         trait A:
@@ -111,15 +115,6 @@ object IntersectionTypes:
             override def f: Boolean = true
 
         val y: A & B = new X
-
-    object Example23:
-        trait A:
-            def foo: String
-        trait B:
-            def foo: Int
-        
-        val x: List[A] & List[B] = ???
-        val y: List[A & B] = x
 
     /**
      * Example 3: Intersection types vs compound types (a.k.a. `with` types from Scala 2)
