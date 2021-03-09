@@ -7,6 +7,7 @@ object UnionTypes:
      * Example 1: Basics
      * [] Union type
      * [] Commutativity
+     * [] Variance
      * [] Union types vs either
      */
 
@@ -20,7 +21,7 @@ object UnionTypes:
     // How many values does type `Boolean | Boolean` have?
 
     /**
-     * Example 2: What type will be inferred? 
+     * Example 2: What type will be inferred?
      * [] Can we improve inference with union types?
      */
     val what = if(1==1) "a" else 10
@@ -54,6 +55,7 @@ object IntersectionTypes:
      * Example 1: Basics
      * [] Example
      * [] Subtyping
+     * [] Variance
      */
     object Example1:
         trait A:
@@ -61,12 +63,14 @@ object IntersectionTypes:
 
         trait B:
             def bar: Int
+        
+        def x: A & B = ???
+
 
     /**
      * Example 2: Conflicting members
      * [] Same name different type
      * [] Same name same type
-     * [] Variance
      */
     object Example21:
         trait A:
@@ -74,23 +78,17 @@ object IntersectionTypes:
         trait B:
             def foo: Int
 
-        val x: A & B = ???
-        
+        def x: A & B = ???
+
 
     object Example22:
         trait A:
-            def f: Boolean
-
+            def foo: Boolean
         trait B:
-            def f: Boolean
-
-
-    object Example23:
-        trait A:
-            def foo: String
-        trait B:
-            def foo: Int
+            def foo: Boolean
         
+        def x: A & B = ???
+
 
     /**
      * Example 3: Intersection types vs compound types (a.k.a. `with` types from Scala 2)
