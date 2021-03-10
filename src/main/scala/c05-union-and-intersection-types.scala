@@ -56,6 +56,7 @@ object IntersectionTypes:
      * [] Example
      * [] Subtyping
      * [] Variance
+     * [] Definition
      */
     object Example1:
         trait A:
