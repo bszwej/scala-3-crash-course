@@ -132,8 +132,8 @@ object IntersectionTypes:
 
     // In Scala 2
     // :type (???: A with B).f - Boolean
-    // :type (???: B with A).f - Any
+    // :type (???: B with A).f - AnyVal
 
     // In Scala 3
-    // :type (???: A with B).f - Boolean
-    // :type (???: B with A).f - Boolean
+    // :type (???: A & B).f - Boolean & AnyVal
+    // :type (???: B & A).f - AnyVal & Boolean
