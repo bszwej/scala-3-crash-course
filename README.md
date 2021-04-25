@@ -1,6 +1,6 @@
 # Scala 3 crash course
 
-Scala 3 RC1 is already here and we can expect the final release soon! That's why it's a good timing for playing around and seeing what's there. In this workshop we'll see the most interesting and important features like enums, contextual abstractions (givens, extension methods, type classes, context functions), new types (opaque, unions and intersections). We'll also see what's dropped and what changed. During the exercises, you'll be refactoring Scala 2 to Scala 3 yourself using the new shiny constructs.
+Scala 3 RC3 is already here and we can expect the final release on the 12th of May if no major bugs are found! That's why it's a good timing for playing around and seeing what's there. In this workshop we'll see the most interesting and important features like enums, contextual abstractions (givens, extension methods, type classes, context functions), new types (opaque, unions and intersections). We'll also see what's dropped and what changed. During the exercises, you'll be refactoring Scala 2 to Scala 3 yourself using the new shiny constructs.
 
 This workshop is dedicated to Scala 2 developers and assumes prior knowledge about implicits, ADTs and type classes.
 
@@ -32,6 +32,6 @@ sbt compile
 4. Opaque types
 5. Union and Intersection types
 6. The small bits
-7. New kinds of types: type lambdas, match types, dependent functions, polymorphic functions (in preparation)
-8. Type class derivation (in preparation)
-9. Macros (in preparation)
+7. **(In preparation)** New kinds of types: type lambdas, match types, dependent functions, polymorphic functions 
+8. **(In preparation)** Type class derivation 
+9. **(In preparation)** Macros 
