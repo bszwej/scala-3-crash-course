@@ -113,11 +113,11 @@ object TypeclassesExercises:
   // - instance for Option
   // - syntax
   trait Monad[F[_]]:
-    extension[A, B](fa: F[A]) def bind(f: A => F[B]): F[B]
+    extension[A](fa: F[A]) def bind[B](f: A => F[B]): F[B]
     extension [A](a: A) def unit: F[A]
 
   given Monad[Option] with
-    extension[A, B](fa: Option[A]) def bind(f: A => Option[B]): Option[B] = fa.fold(None)(f)
+    extension[A](fa: Option[A]) def bind[B](f: A => Option[B]): Option[B] = fa.fold(None)(f)
     extension [A](a: A) def unit: Option[A] = Some(a)
 
   Some(2).bind(x => Some(x * 5)).bind(_ => None) // None
