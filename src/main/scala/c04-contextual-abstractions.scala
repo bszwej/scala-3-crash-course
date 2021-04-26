@@ -61,16 +61,16 @@ object ImplicitParams:
   // Exercise 1: Extend java.time.Instant with a method
   // calculating the duration between two instants: def -(until: Instant): java.time.Duration
   // Hint: You can use java.time.Duration.between(one, two).
-  import java.time._
+  import java.time.* // In Scala 3 `*` is the wildcard import and not `_` anymore.
 
 // The following should compile:
 // println(Instant.now() - Instant.now())
 
-// Exercise 2: Implement def +(thatTuple: Tuple2[A, B]) function on the tuple2
+// Exercise 2: Implement def +(thatTuple: Tuple2[A, B]) function on the Tuple2
 // Hint: Use the Numeric type class (https://www.scala-lang.org/api/current/scala/math/Numeric.html).
 
 // The following should compile:
-//println((2, 2.1) + (3, 4.0))
+// println((2, 2.1) + (3, 4.0)) // result: (5, 6.1)
 
 /**
  * Chapter 3.3: Type classes
