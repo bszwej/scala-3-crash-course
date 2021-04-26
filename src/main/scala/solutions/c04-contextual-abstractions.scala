@@ -173,7 +173,7 @@ object ContextFunctions:
 
   type Context[A] = TracingContext ?=> A // implicit String => Int
   object Context:
-    val traceId: TracingContext ?=> TraceId = summon[TracingContext].traceId
+    def traceId(using TracingContext): TraceId = summon[TracingContext].traceId
 
   def createUser(userData: String): Context[Future[Unit]] =
     for
