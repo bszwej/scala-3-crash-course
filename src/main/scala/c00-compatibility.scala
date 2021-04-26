@@ -2,8 +2,8 @@
  * Compatibility
  *
  * - Scala 2 source can be compiled with Scala 3 compiler.
- * - Scala 2.13.4 libraries work with Scala 3.
- * - Scala 3 libraries work with Scala 2.13.4.
+ * - Scala 2.13 libraries work with Scala 3.
+ * - Scala 3 libraries work with Scala 2.13.5 or newer.
  *
  * Migration guide: https://scalacenter.github.io/scala-3-migration-guide/
  * Scala 3 community build: https://github.com/lampepfl/dotty/blob/master/community-build/test/scala/dotty/communitybuild/CommunityBuildTest.scala#L88
