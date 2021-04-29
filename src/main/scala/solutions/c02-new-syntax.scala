@@ -1,7 +1,7 @@
 package solutions
 
 /**
- * Chapter 1: New syntax
+ * Chapter 2: New syntax
  *
  * More on that: https://contributors.scala-lang.org/t/feedback-sought-optional-braces/4702
  */

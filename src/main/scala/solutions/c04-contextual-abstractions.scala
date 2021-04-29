@@ -1,7 +1,7 @@
 package solutions
 
 /**
- * Chapter 3: Contextual abstractions (a.k.a. implicits we all love(d) in Scala 2).
+ * Chapter 4: Contextual abstractions (a.k.a. implicits we all love(d) in Scala 2).
  *
  * The table below presents contextual language features of Scala 3 and how they relate to Scala 2.
  *

@@ -1,7 +1,7 @@
 package solutions
 
 /**
- * Chapter 2: Enums
+ * Chapter 3: Enums
  */
 
 // Enums in Scala 2 emulated with sealed traits/abstract classes

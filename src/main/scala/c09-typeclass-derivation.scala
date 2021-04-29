@@ -1,5 +1,5 @@
 /**
- * Chapter 8: Type class derivation
+ * Chapter 9: Type class derivation
  */
 
 // tbd

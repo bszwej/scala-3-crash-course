@@ -1,5 +1,5 @@
 /**
- * Chapter 6: The small bits - minor changes you'll likely use
+ * Chapter 7: The small bits - minor changes you'll likely use
  */
 
 /**

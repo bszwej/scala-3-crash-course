@@ -1,7 +1,7 @@
 package solutions
 
 /**
- * Chapter 5: Union and intersection types
+ * Chapter 6: Union and intersection types
  */
 
 object UnionTypes:

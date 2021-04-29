@@ -1,5 +1,5 @@
 /**
- * Compatibility
+ * Chapter 1: Compatibility
  *
  * - Scala 2 source can be compiled with Scala 3 compiler.
  * - Scala 2.13 libraries work with Scala 3.

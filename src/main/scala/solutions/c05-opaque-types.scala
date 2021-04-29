@@ -1,7 +1,7 @@
 package solutions
 
 /**
- * Chapter 4: Opaque types
+ * Chapter 5: Opaque types
  */
 
 object AnyValDrawbacks:
