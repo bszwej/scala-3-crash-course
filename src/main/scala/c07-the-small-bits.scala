@@ -33,7 +33,7 @@ object StrictEquality:
 
   // Both are compiling fine!
   A("") == A("")
-  B(10) == A("")
+  A("") == B(10)
 
 /**
  * Example 4: 22 limit is dropped
