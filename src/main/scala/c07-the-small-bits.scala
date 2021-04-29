@@ -22,29 +22,18 @@ def topLevelDefinitions =
   ???
 
 /**
- * Example 3: Trait parameters
- * [] They can be used instead of early initializers that were dropped
+ * Example 3: Strict equality
+ * [] == implemented in terms of .equals
+ * [] opt-in: import scala.language.strictEquality or -language:strictEquality flag
+ * [] CanEqual type class using derives or given
  */
-object EarlyInitializers:
-  trait Name {
-    val name: String
-    val size: Int = name.size
-  }
-  class MyName extends Name {
-    override val name: String = "name"
-  }
-  new MyName() // NullPointerException, because super constructors are called first.
+object StrictEquality:
+  case class A(text: String)
+  case class B(number: Int)
 
-// Solution to NPE in Scala 2 was to use early initializers:
-// class MyName extends { override val name: String = "name" } with Name {}
-
-// In Scala 3 we use trait parameters instead:
-object TraitParams:
-  trait Name(name: String) {
-    val size: Int = name.size
-  }
-  class MyName extends Name("name")
-  new MyName() // Works fine
+  // Both are compiling fine!
+  A("") == A("")
+  B(10) == A("")
 
 /**
  * Example 4: 22 limit is dropped

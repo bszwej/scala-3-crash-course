@@ -18,6 +18,6 @@ lazy val root = project
   "-language:higherKinds",
   "-language:existentials",
   // "-indent", "-rewrite"
-  //  "-Xprint:typer"
-  //  "-Xprint:parser"
+  // "-Xprint:typer"
+  // "-Xprint:parser"
   )

@@ -47,7 +47,7 @@ object UnionTypes:
     yield ()
 
 //
-// Exercise 1: Model a PaymentAuthorizationError ADT from Chapter 2 (enums) using a union type.
+// Exercise 1: Model a PaymentAuthorizationError ADT from Chapter 3 (enums) using a union type.
 // What pros/cons do you see when you use a union type vs enums in modeling ADTs?
 //
 
@@ -100,3 +100,6 @@ object IntersectionTypes:
     override def f: Boolean
   trait B extends Foo:
     override def f: AnyVal
+
+// btw. there's a nice talk by Dean Wampler that thoroughly explains
+// all the properties of union and intersection types: https://youtu.be/8H9KPlGSBnM?t=1270
