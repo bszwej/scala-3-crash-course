@@ -37,3 +37,7 @@ sbt compile
 7. **(In preparation)** New kinds of types: type lambdas, match types, dependent functions, polymorphic functions 
 8. **(In preparation)** Type class derivation 
 9. **(In preparation)** Macros 
+
+## Solutions
+
+Solutions to all exercises can be found in the [`solutions`](https://github.com/bszwej/scala-3-crash-course/tree/master/src/main/scala/solutions) package.
